@@ -123,11 +123,6 @@ class NtfstoolWrapperApp:
                 ent = ttk.Entry(frm, textvariable=self.params[key], width=30)
                 btn = ttk.Button(frm, text="...", width=3, command=lambda k=key: self.browse_output(k))
                 self.input_widgets[key] = (lbl, frm, ent, btn)
-            #elif key == "rules":
-            #    frm = ttk.Frame(self.param_frame)
-            #    ent = ttk.Entry(frm, textvariable=self.params[key], width=30)
-            #    btn = ttk.Button(frm, text="...", width=3, command=lambda k=key: self.browse_output(k))
-            #    self.input_widgets[key] = (lbl, frm, ent, btn)
             else:
                 ent = ttk.Entry(self.param_frame, textvariable=self.params[key], width=30)
                 self.input_widgets[key] = (lbl, ent)
